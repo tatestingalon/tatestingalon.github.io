@@ -1,1 +1,3 @@
-Manually hosting https://github.com/Talon125/talon-vue-sass-template/tree/ark-ui
+# tatestingalon.github.io
+
+This is now just for whenever I wanna test something with GitHub Pages.
