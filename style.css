@@ -1,0 +1,12 @@
+body {
+  color: #ddd;
+  background-color: #111;
+}
+
+a {
+  color: hsl(240deg 100% 75%);
+}
+
+a:visited {
+  color: hsl(270deg 100% 75%);
+}
