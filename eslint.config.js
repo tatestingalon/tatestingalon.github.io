@@ -1,28 +1,14 @@
-import { defineConfig, globalIgnores } from 'eslint/config'
-import globals from 'globals'
-import js from '@eslint/js'
-import pluginVue from 'eslint-plugin-vue'
-import pluginOxlint from 'eslint-plugin-oxlint'
-import skipFormatting from '@vue/eslint-config-prettier/skip-formatting'
+import html from '@html-eslint/eslint-plugin'
 
-export default defineConfig([
+export default [
+  // your own configurations.
   {
-    name: 'app/files-to-lint',
-    files: ['**/*.{js,mjs,jsx,vue}'],
-  },
-
-  globalIgnores(['**/dist/**', '**/dist-ssr/**', '**/coverage/**']),
-
-  {
-    languageOptions: {
-      globals: {
-        ...globals.browser,
-      },
-    },
-  },
-
-  js.configs.recommended,
-  ...pluginVue.configs['flat/essential'],
-  ...pluginOxlint.configs['flat/recommended'],
-  skipFormatting,
-])
+    // recommended configuration included in the plugin
+    ...html.configs['flat/recommended'],
+    files: ['**/*.html'],
+    rules: {
+      ...html.configs['flat/recommended'].rules, // Must be defined. If not, all recommended rules will be lost
+      '@html-eslint/indent': ['error', 2]
+    }
+  }
+]

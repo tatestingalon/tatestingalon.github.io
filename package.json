@@ -1,34 +1,29 @@
 {
-  "name": "aaaaaaaaaa",
+  "name": "tatestingalon.github.io",
   "version": "0.0.0",
-  "private": true,
-  "type": "module",
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview",
-    "lint:oxlint": "oxlint . --fix -D correctness --ignore-path .gitignore",
-    "lint:eslint": "eslint . --fix",
-    "lint": "run-s lint:*",
-    "format": "prettier --write src/"
+  "description": "GitHub Pages playground",
+  "homepage": "https://github.com/tatestingalon/tatestingalon.github.io#readme",
+  "bugs": {
+    "url": "https://github.com/tatestingalon/tatestingalon.github.io/issues"
   },
-  "dependencies": {
-    "pinia": "^3.0.1",
-    "vue": "^3.5.13",
-    "vue-router": "^4.5.0"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tatestingalon/tatestingalon.github.io.git"
+  },
+  "license": "GPL-3.0",
+  "author": "Talon",
+  "type": "module",
+  "main": "index.html",
+  "scripts": {
+    "lint": "eslint --fix"
   },
   "devDependencies": {
-    "@eslint/js": "^9.22.0",
-    "@vitejs/plugin-vue": "^5.2.3",
-    "@vue/eslint-config-prettier": "^10.2.0",
-    "eslint": "^9.22.0",
-    "eslint-plugin-oxlint": "^0.16.0",
-    "eslint-plugin-vue": "~10.0.0",
-    "globals": "^16.0.0",
-    "npm-run-all2": "^7.0.2",
-    "oxlint": "^0.16.0",
-    "prettier": "3.5.3",
-    "vite": "^6.2.4",
-    "vite-plugin-vue-devtools": "^7.7.2"
+    "@html-eslint/eslint-plugin": "^0.42.0",
+    "@html-eslint/parser": "^0.42.0",
+    "eslint": "^9.31.0",
+    "standard": "^17.1.2",
+    "stylelint": "^16.21.1",
+    "stylelint-config-clean-order": "^7.0.0",
+    "stylelint-config-standard": "^38.0.0"
   }
 }
